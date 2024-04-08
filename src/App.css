@@ -40,3 +40,19 @@
 .read-the-docs {
   color: #888;
 }
+
+.popup-container {
+  position: relative;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px; 
+  right: 0;
+  left: auto;
+  cursor: pointer;
+  font-size: 28px;
+  color: #333; /* Adjust color as needed */
+}
+
+

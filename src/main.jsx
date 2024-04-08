@@ -9,9 +9,11 @@ import './index.css'
 //   { id: "todo-1", name: "Sleep", completed: false },
 //   { id: "todo-2", name: "Repeat", completed: false },
 // ];
+const rawData = localStorage.getItem('tasks');
+console.log('Raw data from localStorage:', rawData);
 
-const DATA = JSON.parse(localStorage.getItem('tasks')) || [] ;
-console.log(DATA);
+const DATA = JSON.parse(rawData) || [] ;
+console.log('Parsed JSON Data:', DATA);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -31,3 +33,4 @@ if ("serviceWorker" in navigator) {
   });
   });
  }
+

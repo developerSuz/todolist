@@ -1,36 +1,48 @@
 {
-    "name": "Dynamic Web Technologies",
-    "short_name": "DWT",
+    "name": "Academy Cafe",
+    "short_name": "AC",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#fff",
-    "description": "A test Application for the module of Dynamic Web Technologies.",
+    "description": "Alva Academy Cafe ordering app",
+    "theme_color": "#007bff",
     "icons": [
     {
-    "src": "images/homescreen48.svg",
-    "sizes": "48x48",
-    "type": "image/svg"
+    "src": "images/cafeLogoNoText1024.png",
+    "sizes": "1024x1024",
+    "type": "image/png"
     },
     {
-    "src": "images/homescreen72.svg",
-    "sizes": "72x72",
-    "type": "image/svg"
+    "src": "images/cafeLogoNoText512.png",
+    "sizes": "512x512",
+    "type": "image/png"
     },
     {
-    "src": "images/homescreen96.svg",
-    "sizes": "96x96",
-    "type": "image/svg"
+    "src": "images/cafeLogoNoText192.png",
+    "sizes": "192x192",
+    "type": "image/png"
     },
     {
-    "src": "images/homescreen144.svg",
+    "src": "images/cafeLogoNoText144.png",
     "sizes": "144x144",
-    "type": "image/svg"
+    "type": "image/png"
     },
     {
-    "src": "images/homescreen168.svg",
-    "sizes": "168x168",
-    "type": "image/svg"
-    }
+    "src": "images/genericCup.png",
+    "sizes": "192x192",
+    "type": "image/png"
+    },
+    {
+    "src": "images/homescreen512.png",
+    "sizes": "640x798",
+    "type": "image/png"
+    },
+    {
+        "src": "images/maskable_icon.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
     ]
    }
    

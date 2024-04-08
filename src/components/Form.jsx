@@ -1,13 +1,25 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Form(props) {
   const [name, setName] = useState('');
+  const [addition, setAddition] = useState(false); // to trigger geoFinMe after a task added
+  useEffect(() => {
+    if (addition) {
+      console.log("useEffect detected addition");
+      // props.geoFindMe();
+      setAddition(false);
+    }
+  });
 
   // NOTE: As written, this function has a bug: it doesn't prevent the user
   // from submitting an empty form. This is left as an exercise for developers
   // working through MDN's React tutorial.
   function handleSubmit(event) {
     event.preventDefault();
+    if (!name.trim()) {
+      return;
+      }
+      setAddition(true); 
     props.addTask(name);
     setName("");
   }
@@ -20,7 +32,7 @@ function Form(props) {
     <form onSubmit={handleSubmit}>
       <h2 className="label-wrapper">
         <label htmlFor="new-todo-input" className="label__lg">
-          What needs to be done?
+          What new item would you like to add?
         </label>
       </h2>
 

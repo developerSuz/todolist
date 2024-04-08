@@ -2,15 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta description="Add new tasks and jobs to your to a to-do list. Tick off as you complete a job." />
-    <title>TodoMatic</title>
-    <link rel="icon" href="/images/tick.svg" />
-    <link rel="manifest" href="/manifest.json"> 
+    <meta name="description" content="Alva Academy Cafe Application" />
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+        font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+        img-src 'self' data:;
+        connect-src 'self';
+        frame-src https://*.example.com;
+    ">
+    <meta name="theme-color" content="#317EFB"/>
+    <title>Academy Cafe</title>
+    <link rel="icon" href="/cafeReact/public/images/cafeIcon64Transp.png"/>
+    <link rel="manifest" href="/cafeReact/public/manifest.json"> 
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/cafeReact/src/main.jsx"></script>
   </body>
 </html>
